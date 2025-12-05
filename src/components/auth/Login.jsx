@@ -14,7 +14,9 @@ const Login = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <h2 className="text-2xl font-semibold mb-4 text-center">Jira Login</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-center">
+        Jira Login (Vetty)
+      </h2>
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col gap-2 mb-4">
           <input
