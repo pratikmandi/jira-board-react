@@ -1,7 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import Login from "./components/auth/Login";
+import Board from "./components/board/Board";
 
 const App = () => {
-  return <div className="flex-1 text-center">App</div>;
+  const isSignedIn = useSelector((state) => state.auth.isSignedIn);
+  return <div>{isSignedIn ? <Board /> : <Login />}</div>;
 };
 
 export default App;
